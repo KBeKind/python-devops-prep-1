@@ -25,11 +25,26 @@
 
 #     For example, if the user enters 5 the program should display 15.  15 is (1+2+3+4+5)
 
-user_input = int(input(""))
+# user_input = int(input(""))
+
+# sum = 0
+
+# for num in range(1, user_input + 1):
+#     sum += num
+
+# print(sum)
+
+
+# Write a program that reads in numbers until a -1 is entered and prints the sum of all numbers entered.
+#     For example, if the user enters 5 10 15 -1 the program should 
+#     display 30 (Each number will be separated by a carriage return).  30 is (5+10+15)
+
 
 sum = 0
+num = int(input(""))
 
-for num in range(1, user_input + 1):
+while num != -1:
     sum += num
+    num = int(input(""))
 
 print(sum)
